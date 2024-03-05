@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocao Craftsmanship</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #EAC696;
+            margin: 0;
+            padding: 0;
+            background-image: url('background-pattern.png');
+        }
+
+        header {
+            background-color: #5C3D2E;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #B67352;    ----->
+            margin-top: 20px;
+            font-size: 36px;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #EAC696;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #e44d26;
+        }
+
+        .chocolate-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .chocolate {
+            width: 280px;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            animation: chocolateFade 1s ease-in-out;
+        }
+
+        .chocolate img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .chocolate:hover {
+            transform: scale(1.05);
+        }
+
+        .chocolate-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            box-sizing: border-box;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .chocolate:hover .chocolate-info {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .chocolate-info h3 {
+            margin: 0;
+            color: #5C3D2E;
+            font-size: 24px;
+        }
+
+        .chocolate-info p {
+            margin: 10px 0 0;
+            color: #888;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .chocolate-info i {
+            margin-right: 5px;
+            color: #e44d26;
+        }
+
+        @keyframes chocolateFade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cocao Craftsmanship</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Coffee</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<h1>Chocolates</h1>
+
+<div class="chocolate-container">
+    <div class="chocolate">
+        <img src="C:\Users\DELL\Desktop\choco2custom.jpg" alt="Chocolate 1">
+        <div class="chocolate-info">
+            <h3>Custom Delights</h3>
+            <p><i class="fas fa-seedling"></i> Crafted from the finest cocoa beans, handcrafted delights tailored to your taste.
+                Indulge in a unique creation, just for you.
+                A symphony of flavors, composed with your desires.
+                Chocolate elevated, a personalized masterpiece.
+                More than a treat, a custom experience for the senses.</p>
+        </div>
+    </div>
+
+    <div class="chocolate">
+        <img src="C:\Users\DELL\Desktop\choco1.jpg" alt="Chocolate 2">
+        <div class="chocolate-info">
+            <h3>House Specials</h3>
+            <p><i class="fas fa-cookie-bite"></i> Indulge in the smooth and creamy texture of our premium milk chocolates. A delightful treat for your senses, perfect for any occasion.</p>
+        </div>
+    </div>
+
+    <!-- Add more chocolates as needed -->
+
+</div>
+
+</body>
+</html>
