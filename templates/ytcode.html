@@ -48,16 +48,19 @@
 
       </div>
       <div class="hero-img">
-        <img src="C:\Users\DELL\Desktop\chocoffee.jpg">
+        <img src="C:\Users\DELL\Desktop\chocoffee.jpg" width="100" height="30"/>
       </div>
 
     </section>
 
     <div class="icons">
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
+      <a href="#"><i class="ri-instagram-fill"></i></a>
+      <a href="#"><i class="ri-pinterest-fill"></i></a>
+      <a href="#"><i class="ri-youtube-fill"></i></a>
+    </div>
 
+    <div class="scroll-down">
+      <a href="#"><i class="ri-arrow-down-fill"></i></a>
     </div>
 
     <style>
@@ -135,6 +138,7 @@
           font-weight: 400;
           color: #B0926A;
           margin-bottom: 40px;
+          text-align: left;
         }
 
         .hero-text h1{
@@ -143,19 +147,22 @@
           line-height: 1;
           color: #B0926A;
           margin: 0 0 45px;
+          text-align: left;
 
         }
 
         .hero-text h4{
           font-size: 18px;
           color: #B0926A;
+          text-align: left;
         }
 
         .hero-text p{
-          color: #5C3D2E;
+          color: #B0926A;
           font-size: 20px;
           line-height: 1.9;
           margin-bottom: 40px;
+          text-align: left;
         }
 
         .hero-img img{
@@ -182,6 +189,72 @@
           background: transparent;
           border: 1px solid white;
           transform: translateX(8p)
+        }
+
+        .icons{
+          position: absolute;
+          top: 50%;
+          padding: 0 9%;
+          tranform: translateY(-50%)
+        }
+
+        .icons i{
+          display: block;
+          margin: 26px 0;
+          font-size: 24px;
+          color: #B0926A;
+          transition: all .50s;
+        }
+        .icons i:hover{
+          color: #3C2A21;
+          transform: translateY(-50%);
+        }
+
+        .scroll-down{
+          position: absolute;
+          bottom: 6%;
+          right: 9%;
+        }
+
+        .scroll-down i{
+          display: block;
+          padding: 12px;
+          font-size: 25px;
+          color: white;
+          background: #B0926A;
+          border-radius: 30px;
+          transition: all .50s ease;
+        }
+
+        .scroll-down i:hover{
+          transform: translateY(-5px);
+        }
+
+        @media (max-width: 1535px){
+          header{
+            padding: 15px 3%;
+            transition: .2s;
+          }
+          .icons{
+            padding: o 3%;
+            transition: .2s;
+          }
+
+          .scroll-down{
+            right: 3%;
+            transition: .2s;
+          }
+        }
+        @media (max-width: 13490px){
+          .hero-img img{
+            width: 100%;
+            height: auto;
+          }
+
+          .hero-text h1{
+            font-size: 75px;
+            margin: 0 0 30px;
+          }
         }
 
     </style>
